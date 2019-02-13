@@ -274,7 +274,7 @@ def start(title_text, text, source, outpath):
     quotes_titles, Exclaim_titles, AllPunc_titles, allcaps_titles = stuff_LIWC_leftout(title_text)
     lex_div_title = ttr(title_text)
     counts_norm_title = POS_features("input_title", title_text, pos_features_path)
-    counts_norm_title = [str(c) for c in counts_norm]
+    counts_norm_title = [str(c) for c in counts_norm_title]
     counts_norm_liwc_title, liwc_cats_title2 = LIWC(title_text, cat_dict, stem_dict, counts_dict)
     counts_norm_liwc_title = [str(c) for c in counts_norm_liwc_title]
     vadneg_title, vadneu_title, vadpos_title = vadersent(title_text)
